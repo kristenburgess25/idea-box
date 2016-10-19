@@ -12,6 +12,13 @@ function onLoad(){
   toggleButton();
 };
 
+function Idea(id, title, body, quality) {
+  this.id = parseInt(id);
+  this.title = title;
+  this.body = body;
+  this.quality = quality;
+};
+
 
 function retrieveLocal(){
   if (localStorage.getItem("allideas") === null){
